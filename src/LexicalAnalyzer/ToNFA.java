@@ -22,7 +22,7 @@ public class ToNFA {
 //        NFAStack nfaHead = nfaStack;
 //        SymbolStack symbolHead = symbolStack;
 
-        for(int i=0;i<input.length();i++){
+        for (int i = 0; i < input.length(); i++) {
 //            System.out.println(i);
 //            if(i>1)
 //                NFANode.printNFANode(nfaStack.getTop().headNode);

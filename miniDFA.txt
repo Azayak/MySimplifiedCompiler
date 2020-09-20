@@ -1,4 +1,9 @@
 A true false B false true l
 A true false B false true d
+A true false B false true +
+A true false B false true -
+A true false G false true %
+A true false H false true /
+A true false I false true y
 B false true B false true l
 B false true B false true d

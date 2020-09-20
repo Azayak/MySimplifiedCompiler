@@ -1,0 +1,36 @@
+int mian ( ) {
+int a = 1 ;
+float b = 1.5 ;
+return 0 ;
+}
+
+
+int main ( ) {
+int a = 2 ;
+float b = 3.8 ;
+int c = 3 ;
+int d = a + c ;
+return 1 ;
+}
+
+
+int main ( ) {
+int a = 1x ;
+return 0 ;
+}
+
+float getTheSum ( float a , float b ) {
+return a + b ;
+}
+int getTheSub ( int a , int b ) {
+return a - b ;
+}
+int main ( ) {
+float a = 1 ;
+float b = 3 ;
+int c = 1.0 ;
+int d = 2.5 ;
+int e = getTheSum ( a , b ) ;
+float f = getTheSub ( c , d ) ;
+return 0 ;
+}

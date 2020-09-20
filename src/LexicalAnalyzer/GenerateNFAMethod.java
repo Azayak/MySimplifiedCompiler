@@ -17,11 +17,21 @@ public class GenerateNFAMethod {
      * @return 新生成的NFA
      */
     public NFA NonSymbol(char nonSymbol){
-        NFANode headNode = new NFANode(getStateNumber.getCurNFAStateNumber(),null_);
-        NFANode tailNode = new NFANode(getStateNumber.getCurNFAStateNumber(),nonSymbol);
-        headNode.nextNodes.add(tailNode);
-        NFA newNFA = new NFA(headNode,tailNode);
-        return newNFA;
+        if (nonSymbol == null_) {
+            //空字处理程序未编写
+            NFANode headNode = new NFANode(getStateNumber.getCurNFAStateNumber(), null_);
+            NFANode tailNode = new NFANode(getStateNumber.getCurNFAStateNumber(), nonSymbol);
+            headNode.nextNodes.add(tailNode);
+            NFA newNFA = new NFA(headNode, tailNode);
+            return newNFA;
+        }
+        else {
+            NFANode headNode = new NFANode(getStateNumber.getCurNFAStateNumber(), null_);
+            NFANode tailNode = new NFANode(getStateNumber.getCurNFAStateNumber(), nonSymbol);
+            headNode.nextNodes.add(tailNode);
+            NFA newNFA = new NFA(headNode, tailNode);
+            return newNFA;
+        }
     }
 
     /**遇到闭包符号时在原来的NFA上增加头尾结点并互相连接

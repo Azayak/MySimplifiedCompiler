@@ -13,11 +13,17 @@ public class Test {
 //        String testInput = "1*1|0";
 //        String testInput = "(0|1|6)|(2|3)|(4|5)";
 
-        String testInput = "a(a*|b*)a|b*";
-        String regExp = "ab";
+//        String testInput = "a(a*|b*)a|b*";
+//        String regExp = "ab";
 
 //        String testInput = "l(l|d)*";
 //        String regExp = "ld";
+
+//        String testInput = "a|b|~";
+//        String regExp = "ab";
+
+        String testInput = "l(l|d)*|(+|-|~)(dd*)(@dd*|~)(E(+|-|~)dd*|~)";
+        String regExp = "ld+-@E";
 
         NFA resNFA = toNFA.getNFA(testInput);
 
